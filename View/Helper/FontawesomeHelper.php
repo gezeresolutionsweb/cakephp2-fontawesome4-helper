@@ -24,7 +24,7 @@ class FontawesomeHelper extends AppHelper {
         $class = '';
         // Added more classes to the generated icon html tag.
         if( isset( $attributes[ 'class' ] ) ) {
-            $class = $attributes[ 'class' ];
+            $class = ' ' . $attributes[ 'class' ];
             unset( $attributes[ 'class' ] );
         }
         $more = '';
